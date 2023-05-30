@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="22.057" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="demo qa" name="To validate demo qa ui pages" time="21.911">
+<system-out><![CDATA[
+Given open demo qa..........................................................passed
+When click window button....................................................passed
+Then child window opens.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
