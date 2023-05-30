@@ -12,13 +12,13 @@ public class test1 {
         driver.get("https://demo.guru99.com/test/delete_customer.php");
 //        String selectLinkOpeninNewTab = Keys.chord(Keys.CONTROL,"t");
 //        driver.findElement(By.linkText("urlLink")).sendKeys(selectLinkOpeninNewTab);
+        driver.findElement(By.name("cusid")).sendKeys("123");
+      driver.findElement(By.name("submit")).click();
+      driver.switchTo().alert().accept();
+      String text = driver.switchTo().alert().getText();
+      System.out.println(text);
         ((JavascriptExecutor) driver).executeScript("window.open()");
         driver.switchTo().newWindow(WindowType.WINDOW);
         driver.get("https://www.google.com/");
-//        driver.findElement(By.name("cusid")).sendKeys("123");
-//        driver.findElement(By.name("submit")).click();
-//        driver.switchTo().alert().accept();
-//        String text = driver.switchTo().alert().getText();
-//        System.out.println(text);
     }
 }
